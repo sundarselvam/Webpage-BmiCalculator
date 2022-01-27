@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>
+       BMI Calculator 
+    </title>
+    <style>
+        label{
+            color: red;
+            padding-right: 10PX;           
+        }
+        input{
+            
+            border-radius:5px;
+            height: 20px;
+        }
+        select{
+            border: 1px;
+        }
+    </style>
+    <script src="BMI.js">
+
+    </script>
+</head>
+<body>
+    <center>
+<div style="background-color: skyblue;width:400px;border-radius: 20px; padding: 20px;">
+    
+    <form>
+        <h1 style="color: red;"> BMI Calculator</h1>
+        <label>Name</label> <input type="text" id="name">  <br><br>
+        <label>Age &nbsp;</label> <input type="number" id="age"> <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;           
+        <label>Height</label> <input type="number" id="h"> 
+               <select id="h_measurement" style="border-radius: 5px; border: 1px;">
+               <option value="m"> Meter</option>
+               <option value="cm"> Cm</option>
+                <option value="f"> Ft</option>
+            </select> <br><br> &nbsp;&nbsp; 
+           
+        <label>Weight</label> <input type="number" id="w"> KG <br><br> &nbsp;  &nbsp; 
+      <input type="button" value="Calculate" onclick="getdata()" style="height: 30px;color: green;border-radius: 10px;" > &nbsp; &nbsp;&nbsp; &nbsp;
+      <input type="reset" value="Clear" style="height: 30px;width: 70px; color: red;border-radius: 10px;">
+    </form>
+</div>
+<div id='display'>
+    <h2 style="color: green;"></h2>
+</div>
+</center>
+</body>
+</html>
